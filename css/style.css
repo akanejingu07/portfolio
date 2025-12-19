@@ -125,21 +125,85 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 72px 56px;
+  max-width: 1000px;
+  margin: 0 auto;  
 }
 
 .work-item {
   text-align: center;
 }
 
+/* ===== Works 改良 ===== */
+
+.work-item {
+  text-align: left;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(47, 168, 154, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(47, 168, 154, 0.12);
+}
+
+.work-image {
+  background-color: var(--emerald-light);
+  padding: 8px;
+}
+
+
 .work-item img {
+  border-radius: 8px;
   width: 100%;
-  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  cursor: zoom-in;  
+}
+
+.work-title {
+  margin-top: 16px;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: var(--emerald-dark);
 }
 
 .work-caption {
-  margin-top: 16px;
-  font-size: 14px;
-  color: var(--text-sub);
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ===== Image Modal ===== */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(47, 168, 154, 0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 32px;
+  color: var(--emerald-dark);
+  cursor: pointer;
 }
 
 /* ===== Footer ===== */
@@ -170,4 +234,7 @@ body {
   .section {
     padding: 96px 16px;
   }
+  .work-image {
+      height: 140px;
+    }
 }
