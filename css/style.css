@@ -61,7 +61,7 @@ body {
 }
 
 .hero-image img {
-  max-width: 460px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -97,7 +97,7 @@ body {
 
 /* ===== About ===== */
 .about-text {
-  max-width: 640px;
+  max-width: 800px;
   margin-bottom: 32px;
 }
 
