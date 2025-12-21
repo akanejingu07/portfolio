@@ -97,7 +97,6 @@ body {
 
 /* ===== About ===== */
 .about-text {
-
   margin-bottom: 32px;
 }
 
@@ -105,7 +104,7 @@ body {
   margin-top: 56px;
 }
 
-.button {
+/* .button {
   display: inline-block;
   padding: 14px 40px;
   border: 1px solid var(--emerald-main);
@@ -113,12 +112,12 @@ body {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 0.08em;
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-color: var(--emerald-main);
   color: #ffffff;
-}
+} */
 
 /* ===== Works ===== */
 .works-grid {
