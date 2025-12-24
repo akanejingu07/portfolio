@@ -220,6 +220,94 @@ body {
   line-height: 1.7;
 }
 
+/* ===== 作品詳細モーダル ===== */
+#work-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* モーダル本体 */
+#work-modal .modal-inner {
+  background: #fff;
+  max-width: 520px;
+  width: 90%;
+  padding: 32px 36px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+  animation: modalFadeIn 0.35s ease-out;
+}
+
+/* タイトル */
+#modal-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+
+/* 使用技術 */
+#modal-tech {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* 説明文 */
+#modal-desc {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+/* アプリを見るリンク */
+#modal-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #1f6f5c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 111, 92, 0.4);
+  padding-bottom: 2px;
+}
+
+#modal-link:hover {
+  opacity: 0.7;
+}
+
+/* 閉じるボタン */
+#work-modal .modal-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+#work-modal .modal-close:hover {
+  color: #000;
+}
+
+/* 表示アニメーション */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ===== Image Modal ===== */
 
 .modal {

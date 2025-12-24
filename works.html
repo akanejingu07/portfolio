@@ -32,109 +32,84 @@
 
       <div class="works-grid">
 
-        <!-- 作品6 -->
-        <figure class="work-item">
-          <img src="images/work6.jpg" alt="作品6" />
-          <h3 class="work-title">計算機アプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://simple-calc-app-envs.onrender.com">simple-calc-app</a>
-            <p class="work-caption">4種類の基本演算（＋ − × ÷）ができるシンプルな計算アプリです。  
-              Flask、HTML/CSS を使用し、UI の明確さと中央寄せレイアウトを意識してデザインしました。  
-              Render にデプロイしてポートフォリオとして公開しています。
-              </p>
-          </figcaption>
-        </figure>
-        <!-- 作品7 -->
-        <figure class="work-item">
-          <img src="images/work7.jpg" alt="作品7" />
-          <h3 class="work-title">レシピ検索アプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://recipesearch-app.onrender.com">recipesearch_app</a>
-            <p class="work-caption">レシピ検索アプリです。Flask を用いて外部API連携のレシピ検索アプリを制作し、
-              GitHub で管理し Render で公開しました。
-              UI調整やエラー対応も一通り経験しています。</p>
-          </figcaption>
-        </figure>
-        <!-- 作品8 -->
-        <figure class="work-item">
-          <img src="images/work8.jpg" alt="作品8" />
-          <h3 class="work-title">ハンコ風画像加工アプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://akanejingu07.github.io/stamp-vector-app/">stamp-vector-app</a>
-            <p class="work-caption">画像をアップロードすると、白黒化・輪郭抽出を行い、
-              ハンコ風の朱色SVGとしてダウンロードできるWebアプリです。
-              JavaScriptとCanvasを使い、Potraceアルゴリズムによるベクター変換を実装しました。
-              スマートフォンにも対応しています。</p>
-          </figcaption>
-        </figure>
-        <!-- 作品9 -->
-        <figure class="work-item">
-          <img src="images/work9.jpg" alt="作品9" />
-          <h3 class="work-title">気分記録アプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://mood-app-hn1r.onrender.com">mood_app</a>
-              <p class="work-caption">Flask と PostgreSQL を用いた、ログイン機能付きの気分記録 Web アプリです。
-              SQLite ではデプロイ後にデータが消える問題があり、PostgreSQL に移行して永続化を実現しました。psycopg2 と Python バージョンの不整合によるエラーに対応し、
-              Python 3.11 に固定することで解決。Render 環境で init_db() を起動時に実行するとタイムアウトする問題があり、初期化処理の実行タイミングを調整しました。
-              また、Git の rebase / conflict 解決を行い、履歴を保ったまま修正を反映しました。</p>
-          </figcaption>
-        </figure>
-        <!-- 作品10 -->
-        <figure class="work-item">
-          <img src="images/work10.jpg" alt="作品10" />
-          <h3 class="work-title">人生で最高の７曲をシェアするアプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://best7songs-app.onrender.com">best7songs_app</a>
-            <p class="work-caption">（※DBが有料のため現在動作しません。）Flaskのルーティング設計と GET / POST の使い分けのほか、セッションを用いた ログイン状態の管理と権限制御を実装しました。PostgreSQLを使い、posts / songs / users のテーブル設計を行いました。Renderでのデプロイ時に環境変数（DATABASE_URL / SECRET_KEY）の扱いを学んだほか、ローカルと本番の挙動の違いを意識しました。また、CSSでは余白や配置を意識し、落ち着いた見やすいUIを心がけました。</p>
-          </figcaption>
-        </figure>
-        <!-- 作品11 -->
-        <figure class="work-item">
-          <img src="images/work11.jpg" alt="作品11" />
-          <h3 class="work-title">家計簿アプリ</h3>
-          <figcaption class="work-caption">
-            <a href="https://kakeibo-app-d4e8.onrender.com">kakeibo_app</a>
-            <p class="work-caption">Flaskを使って作成し、データベースの代わりにJSONで永続化しています。Renderにデプロイしてインターネット上で公開しており、CRUD操作およびレスポンシブ対応を実装しています。</p>
-          </figcaption>
-        </figure>
-      <!-- 作品12 -->
-      <figure class="work-item">
-        <img src="images/work12.png" alt="作品12" />
-        <h3 class="work-title">黒豆せんべいトラッカー</h3>
-        <figcaption class="work-caption">
-          <a href="https://senbei-tracker-app.onrender.com">senbei_tracker_app</a>
-          <p class="work-caption">父が黒豆煎餅を食べ過ぎてしまうことがあり、注意や制限ではなく「見える化」で気づける仕組みを作りたいと考え、やさしい操作感のWebアプリとして制作しました。</p>
-        </figcaption>
+        <figure class="work-item"
+        data-title="ハンコ風画像加工アプリ"
+        data-desc="心のこもった手作業風のデザインをしたい！という気持ちから生まれたアプリです。画像をアップロードすると、白黒化・輪郭抽出を行い、ハンコ風の朱色SVGとしてダウンロードできるWebアプリです。JavaScriptとCanvasを使い、Potraceアルゴリズムによるベクター変換を実装しました。スマートフォンにも対応しています。"
+        data-tech="HTML / CSS / JavaScript"
+        data-link="https://akanejingu07.github.io/stamp-vector-app/"
+      >
+        <img src="images/work8.jpg" alt="ハンコ風画像加工アプリ" />
+        <h3 class="work-title">ハンコ風画像加工アプリ</h3>
+        <p class="work-meta"> HTML / CSS / JavaScript</p>
       </figure>
-      <!-- 作品14 -->
-      <figure class="work-item">
-        <img src="images/work14.jpg" alt="作品14" />
-        <h3 class="work-title">青と黄のストロボ撮影風画像生成ジェネレーター</h3>
-        <figcaption class="work-caption">
-          <a href="https://light-leak-generator.onrender.com">light-leak-generator</a>
-          <p class="work-caption">Canvas API を用いて、ストロボ撮影時の光漏れをイメージした抽象画像を完全ランダム生成する Web アプリを制作しました。</p>
-        </figcaption>
-      </figure>
-      <!-- 作品15 -->
-      <figure class="work-item">
-        <img src="images/work15.jpg" alt="作品15" />
-        <h3 class="work-title">抽象画像生成ジェネレーター</h3>
-        <figcaption class="work-caption">
-          <a href="https://abstract-image-app.onrender.com">abstract_image_app</a>
-          <p class="work-caption">ランダムな抽象画像を生成するミニマルなビジュアルジェネレーターを制作しました。図形・グラデーション・ノイズ・軽いグリッチ表現を組み合わせ、毎回異なるビジュアル体験が生まれるよう設計しています。</p>
-        </figcaption>
-      </figure>
-      <!-- 作品16 -->
-      <figure class="work-item">
-        <img src="images/work16.jpg" alt="作品16" />
-        <h3 class="work-title">１日の過ごし方を可視化するアプリ（MY DAY）</h3>
-        <figcaption class="work-caption">
-          <a href="https://day-pie-app.onrender.com">day_pie_app</a>
-          <p class="work-caption">1日の行動と所要時間（分）を入力し、24時間＝1440分の使い方を円グラフで直感的に把握できるWebアプリです。行動は一覧で管理でき、ドラッグ操作で順番を入れ替えることができます。
-            入力した時間の合計に応じて円グラフが変化し、まだ使っていない時間は薄い色で表示されるため、「自分の1日を俯瞰して見る」ことを目的としています。スマートフォン・PCの両方で快適に使えるよう、画面サイズに応じたレスポンシブデザインを実装しました。</p>
-        </figcaption>
-      </figure>
+
+      <figure class="work-item"
+      data-title="気分記録アプリ"
+      data-desc="毎日を前向きに過ごすため「天気と気分の相関はあるのかな？」「良かったことにもっとフォーカスしたい！」「簡単にログインして記録を残したいな〜」という思いから生まれました。しかし、SQLite ではデプロイ後にデータが消える問題があり、PostgreSQL に移行して永続化を実現しました。psycopg2 と Python バージョンの不整合によるエラーに対応し、Python 3.11 に固定して解決。Render 環境では init_db() を起動時に実行するとタイムアウトする問題があり、初期化処理の実行タイミングを調整しました。"
+      data-tech="Flask / HTML / CSS"
+      data-link="https://mood-app-hn1r.onrender.com"
+    >
+      <img src="images/work9.jpg" alt="気分記録アプリ" />
+      <h3 class="work-title">気分記録アプリ</h3>
+      <p class="work-meta">Flask / HTML / CSS</p>
+    </figure>
+
+    <figure class="work-item"
+    data-title="人生で最高の７曲をシェアするアプリ"
+    data-desc="（※DBが有料のため現在動作しません。）SNSでは人生最高の曲100選！なんて見ますが、正直100曲も聴けないよ、その代わり最高の７曲を聴かせてください！というコンセプトのアプリです。Flaskのルーティング設計と GET / POST の使い分けのほか、セッションを用いた ログイン状態の管理と権限制御を実装しました。PostgreSQLを使い、posts / songs / users のテーブル設計を行いました。Renderでのデプロイ時に環境変数（DATABASE_URL / SECRET_KEY）の扱いを学んだほか、ローカルと本番の挙動の違いを意識しました。また、CSSでは余白や配置を意識し、落ち着いた見やすいUIを心がけました。"
+    data-tech="Flask / HTML / CSS"
+  >
+    <img src="images/work10.jpg" alt="人生で最高の７曲をシェアするアプリ" />
+    <h3 class="work-title">人生で最高の７曲をシェアするアプリ</h3>
+    <p class="work-meta">Flask / HTML / CSS</p>
+  </figure>
+
+  <figure class="work-item"
+  data-title="黒豆せんべいトラッカー"
+  data-desc="父が黒豆煎餅をバリバリ食べ過ぎてしまうことがあり、注意や制限ではなく「見える化」で気づける仕組みを作りたいと考え、やさしい操作感のWebアプリとして制作しました。"
+  data-tech="HTML / CSS / JavaScript"
+  data-link="https://senbei-tracker-app.onrender.com"
+>
+  <img src="images/work12.jpg" alt="黒豆せんべいトラッカー" />
+  <h3 class="work-title">黒豆せんべいトラッカー</h3>
+  <p class="work-meta">HTML / CSS / JavaScript</p>
+</figure>
+
+  <figure class="work-item"
+  data-title="青と黄のストロボ撮影風画像生成ジェネレーター"
+  data-desc="大好きな画家であるルドンの青と黄をテーマに、幻想的な素材を簡単に作れるアプリを公開しました。Canvas API を用いて、ストロボ撮影時の光漏れをイメージした抽象画像を完全ランダム生成します。"
+  data-tech="HTML / CSS / JavaScript"
+  data-link="https://light-leak-generator.onrender.com"
+>
+  <img src="images/work14.jpg" alt="青と黄のストロボ撮影風画像生成ジェネレーター" />
+  <h3 class="work-title">青と黄のストロボ撮影風画像生成ジェネレーター</h3>
+  <p class="work-meta">HTML / CSS / JavaScript</p>
+</figure>
+
+  <figure class="work-item"
+  data-title="MY DAY"
+  data-desc="1日の行動と所要時間（分）を入力し、24時間＝1440分の使い方を円グラフで直感的に把握できるWebアプリです。行動は一覧で管理でき、ドラッグ操作で順番を入れ替えることができます。
+  入力した時間の合計に応じて円グラフが変化し、まだ使っていない時間は薄い色で表示されるため、「自分の1日を俯瞰して見る」ことを目的としています。スマートフォン・PCの両方で快適に使えるよう、画面サイズに応じたレスポンシブデザインを実装しました。"
+  data-tech="Flask / HTML / CSS / JavaScript"
+  data-link="https://day-pie-app.onrender.com"
+>
+  <img src="images/work16.jpg" alt="１日の過ごし方を可視化するアプリ（MY DAY）" />
+  <h3 class="work-title">１日の過ごし方を可視化するアプリ（MY DAY）</h3>
+  <p class="work-meta">Flask / HTML / CSS / JavaScript</p>
+</figure>
     </div>
+    <div id="work-modal" class="modal">
+      <div class="modal-inner">
+        <span class="modal-close">&times;</span>
+    
+        <h3 id="modal-title"></h3>
+        <p id="modal-tech"></p>
+        <p id="modal-desc"></p>
+    
+        <a id="modal-link" target="_blank">▶ アプリを見る</a>
+      </div>
+    </div>
+    
   </section>
   </main>
 
@@ -142,32 +117,63 @@
   <footer class="footer">
     <p>&copy; 2025 Portfolio</p>
   </footer>
-
 <!-- 画像拡大モーダル -->
-  <div id="image-modal" class="modal">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modal-image">
-  </div>
-  <script>
-    const modal = document.getElementById("image-modal");
-    const modalImg = document.getElementById("modal-image");
-    const closeBtn = document.querySelector(".modal-close");
+<div id="image-modal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-content" id="modal-image">
+</div>
+<script>
+  const imageModal = document.getElementById("image-modal");
+  const imageModalImg = document.getElementById("modal-image");
+  const imageCloseBtn = imageModal.querySelector(".modal-close");
   
-    document.querySelectorAll(".work-item img").forEach(img => {
-      img.addEventListener("click", () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
+  document.querySelectorAll(".work-item img").forEach(img => {
+    img.addEventListener("click", (e) => {
+      e.stopPropagation(); // ★重要：親クリックを止める
+      imageModal.style.display = "block";
+      imageModalImg.src = img.src;
+    });
+  });
+  
+  imageCloseBtn.onclick = () => {
+    imageModal.style.display = "none";
+  };
+  
+  imageModal.onclick = () => {
+    imageModal.style.display = "none";
+  };
+  </script>  
+  
+  <script>
+    const workModal = document.getElementById("work-modal");
+    const workCloseBtn = workModal.querySelector(".modal-close");
+    
+    document.querySelectorAll(".work-item").forEach(item => {
+      item.addEventListener("click", () => {
+        if (!item.dataset.title) return; // dataなし作品は無視
+    
+        document.getElementById("modal-title").textContent = item.dataset.title;
+        document.getElementById("modal-desc").textContent = item.dataset.desc;
+        document.getElementById("modal-tech").textContent = item.dataset.tech;
+    
+        const link = document.getElementById("modal-link");
+        link.href = item.dataset.link;
+    
+        workModal.style.display = "flex";
       });
     });
-  
-    closeBtn.onclick = () => {
-      modal.style.display = "none";
+    
+    workCloseBtn.onclick = () => {
+      workModal.style.display = "none";
     };
-  
-    modal.onclick = () => {
-      modal.style.display = "none";
+    
+    workModal.onclick = (e) => {
+      if (e.target === workModal) {
+        workModal.style.display = "none";
+      }
     };
-  </script>
+    </script>
+    
   <div id="sparkle-container"></div>
   <script src="js/sparkle.js"></script>
 
