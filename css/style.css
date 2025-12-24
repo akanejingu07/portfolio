@@ -135,6 +135,11 @@ body {
   margin-bottom: 12px;
 }
 
+.about ul {
+  list-style-type: disc;
+  margin-left: 1.6em;
+}
+
 
 /* ===== Works ===== */
 .works-grid {
