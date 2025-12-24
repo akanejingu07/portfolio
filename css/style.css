@@ -28,6 +28,13 @@ body {
   align-items: center;
   padding: 32px 48px;
   border-bottom: 1px solid var(--emerald-light);
+  background: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0),
+  rgba(230, 244, 242, 0.6),
+  rgba(47, 168, 154, 0.25)
+  );
+  backdrop-filter: blur(6px);
 }
 
 .site-title {
@@ -50,6 +57,37 @@ body {
 
 .nav .current {
   color: var(--emerald-main);
+}
+/* ===== Emerald Sparkle ===== */
+
+#sparkle-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sparkle {
+  position: absolute;
+  top: -10px;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(
+    circle,
+    rgba(47, 168, 154, 0.9),
+    rgba(47, 168, 154, 0.4),
+    rgba(47, 168, 154, 0)
+  );
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: sparkle-fall linear forwards;
+}
+
+@keyframes sparkle-fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
 }
 
 /* ===== Hero ===== */
@@ -103,21 +141,6 @@ body {
 .about-link {
   margin-top: 56px;
 }
-
-/* .button {
-  display: inline-block;
-  padding: 14px 40px;
-  border: 1px solid var(--emerald-main);
-  color: var(--emerald-main);
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 0.08em;
-} */
-
-/* .button:hover {
-  background-color: var(--emerald-main);
-  color: #ffffff;
-} */
 
 .about-block {
   max-width: 640px;
@@ -225,6 +248,60 @@ body {
   font-size: 32px;
   color: var(--emerald-dark);
   cursor: pointer;
+}
+/* ===== Sparkle Effect ===== */
+#sparkle-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.sparkle {
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    rgba(47, 168, 154, 0.8),
+    rgba(47, 168, 154, 0.3),
+    transparent 70%
+  );
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkle-fall linear forwards;
+}
+
+/* 上から静かに降る */
+@keyframes sparkle-fall {
+  0% {
+    transform: translateY(0) scale(0.6);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(120vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* マウス付近で一瞬光る */
+.sparkle.mouse {
+  animation: sparkle-pop 1.2s ease-out forwards;
+}
+
+@keyframes sparkle-pop {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 /* ===== Footer ===== */
