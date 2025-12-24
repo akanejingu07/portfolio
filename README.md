@@ -139,25 +139,6 @@ https://akanejingu07.github.io/portfolio/
 
 ---
 
-<<<<<<< HEAD
-## ディレクトリ構成
-
-portfolio/
-├── index.html
-├── about.html
-├── works.html
-├── gallery.html
-├── css/
-│ └── style.css
-├── js/
-│ └── sparkle.js
-└── images/
-
----
-
->>>>>>> 7b27175 (Add files via upload)
-=======
->>>>>>> 48a3535 (Add files via upload)
 ## 制作意図
 
 情報を詰め込むのではなく、  
