@@ -119,6 +119,23 @@ body {
   color: #ffffff;
 } */
 
+.about-block {
+  max-width: 640px;
+  margin-bottom: 72px;
+}
+
+.about-block h2 {
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  color: var(--emerald-dark);
+  margin-bottom: 24px;
+}
+
+.about-block ul li {
+  margin-bottom: 12px;
+}
+
+
 /* ===== Works ===== */
 .works-grid {
   display: grid;
