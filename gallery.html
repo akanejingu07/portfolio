@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <h1 class="site-title">Portfolio</h1>
+    <nav class="nav">
+      <a href="index.html">Top</a>
+      <a href="about.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="gallery.html" class="current">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section works">
+      <h2 class="section-title">Works</h2>
+
+      <div class="works-grid">
+
+        <!-- 作品1 -->
+        <figure class="work-item">
+          <img src="images/work1.jpg" alt="作品1" />
+          <h3 class="work-title">Queen of spring</h3>
+          <figcaption class="work-caption">
+            <p class="work-caption">陽光の中に佇む春の女王をイメージしました。Procreateで作成しています。</p>
+          </figcaption>
+        </figure>
+
+        <!-- 作品2 -->
+        <figure class="work-item">
+          <img src="images/work2.jpg" alt="作品2" />
+          <h3 class="work-title">Move</h3>
+          <figcaption class="work-caption">
+            <p class="work-caption">JAGDAデザインコンペティション応募作品です。</p>
+          </figcaption>
+        </figure>
+
+        <!-- 作品3 -->
+        <figure class="work-item">
+          <img src="images/work3.jpg" alt="作品3" />
+          <h3 class="work-title">きゃっち！</h3>
+          <figcaption class="work-caption">
+            <p class="work-caption">「不便を解消する」商品企画です。手を汚さずにおやつがあげられる商品としました。</p>
+          </figcaption>
+        </figure>
+        <!-- 作品4 -->
+        <figure class="work-item">
+          <img src="images/work4.jpg" alt="作品4" />
+          <h3 class="work-title">光り</h3>
+          <figcaption class="work-caption">
+            <p class="work-caption">バステル画です。青と黄色を使い力強くも幻想的な作品としました。</p>
+          </figcaption>
+        </figure>
+        <!-- 作品5 -->
+        <figure class="work-item">
+          <img src="images/work5.jpg" alt="作品5" />
+          <h3 class="work-title">バナナケーキ</h3>
+          <figcaption class="work-caption">
+            <p class="work-caption">美しい色合いを求めてAdobe Frascoで作成しました。</p>
+          </figcaption>
+        </figure>
+      <!-- 作品13 -->
+      <figure class="work-item">
+        <img src="images/work13.jpg" alt="作品13" />
+        <h3 class="work-title">明度段階とグレースケール</h3>
+        <figcaption class="work-caption">
+          <p class="work-caption">白と黒二色のみを使い、混色。シンプルで美しい色面の創出をしました。</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>&copy; 2025 Portfolio</p>
+  </footer>
+
+<!-- 画像拡大モーダル -->
+  <div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+  <script>
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".modal-close");
+  
+    document.querySelectorAll(".work-item img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+  
+    modal.onclick = () => {
+      modal.style.display = "none";
+    };
+  </script>
+  
+</body>
+</html>
