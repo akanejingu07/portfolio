@@ -47,7 +47,7 @@
       data-title="気分記録アプリ"
       data-desc="毎日を前向きに過ごすため「天気と気分の相関はあるのかな？」「良かったことにもっとフォーカスしたい！」「簡単にログインして記録を残したいな〜」という思いから生まれました。しかし、SQLite ではデプロイ後にデータが消える問題があり、PostgreSQL に移行して永続化を実現しました。psycopg2 と Python バージョンの不整合によるエラーに対応し、Python 3.11 に固定して解決。Render 環境では init_db() を起動時に実行するとタイムアウトする問題があり、初期化処理の実行タイミングを調整しました。"
       data-tech="Flask / HTML / CSS"
-      data-link="https://mood-app-hn1r.onrender.com"
+      data-link="https://github.com/akanejingu07/mood_app"
     >
       <img src="images/work9.jpg" alt="気分記録アプリ" />
       <h3 class="work-title">気分記録アプリ</h3>
@@ -56,7 +56,7 @@
 
     <figure class="work-item"
     data-title="人生で最高の７曲をシェアするアプリ"
-    data-desc="（※DBが有料のため現在動作しません。）SNSでは人生最高の曲100選！なんて見ますが、正直100曲も聴けないよ、その代わり最高の７曲を聴かせてください！というコンセプトのアプリです。Flaskのルーティング設計と GET / POST の使い分けのほか、セッションを用いた ログイン状態の管理と権限制御を実装しました。PostgreSQLを使い、posts / songs / users のテーブル設計を行いました。Renderでのデプロイ時に環境変数（DATABASE_URL / SECRET_KEY）の扱いを学んだほか、ローカルと本番の挙動の違いを意識しました。また、CSSでは余白や配置を意識し、落ち着いた見やすいUIを心がけました。"
+    data-desc="SNSでは人生最高の曲100選！なんて見ますが、正直100曲も聴けないよ、その代わり最高の７曲を聴かせてください！というコンセプトのアプリです。Flaskのルーティング設計と GET / POST の使い分けのほか、セッションを用いた ログイン状態の管理と権限制御を実装しました。PostgreSQLを使い、posts / songs / users のテーブル設計を行いました。Renderでのデプロイ時に環境変数（DATABASE_URL / SECRET_KEY）の扱いを学んだほか、ローカルと本番の挙動の違いを意識しました。また、CSSでは余白や配置を意識し、落ち着いた見やすいUIを心がけました。"
     data-tech="Flask / HTML / CSS"
     data-link="https://github.com/akanejingu07/best7songs_app/"
   >
@@ -108,6 +108,17 @@
   <img src="images/work17.jpg" alt="役に立たない行動記録アプリ" />
   <h3 class="work-title">役に立たない行動記録アプリ</h3>
   <p class="work-meta">Flask / HTML / CSS</p>
+</figure>
+
+<figure class="work-item"
+data-title="月記帳"
+data-desc="月単位で目標と記録を残すミニマルなWeb日記。"
+data-tech="Flask / HTML / CSS"
+data-link="https://github.com/akanejingu07/monthly_journal"
+>
+<img src="images/work18.jpg" alt="月記帳" />
+<h3 class="work-title">月記帳</h3>
+<p class="work-meta">Flask / HTML / CSS</p>
 </figure>
 
     </div>
